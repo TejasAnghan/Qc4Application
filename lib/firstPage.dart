@@ -18,7 +18,7 @@ class FirstPage extends StatelessWidget {
                 left: 0,
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: 260,
+                  height: MediaQuery.of(context).size.height * 0.45,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: FractionalOffset.bottomCenter,
@@ -32,8 +32,11 @@ class FirstPage extends StatelessWidget {
                           bottomRight: Radius.circular(40))),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30, left: 10, right: 10),
+              Container(
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * .08,
+                    left: 10,
+                    right: 10),
                 child: ListTile(
                   title: Text("Total Balance",
                       style: TextStyle(fontSize: 12, color: Colors.white70)),
@@ -46,7 +49,10 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(right: 25, left: 25, top: 120),
+                margin: EdgeInsets.only(
+                    right: 25,
+                    left: 25,
+                    top: MediaQuery.of(context).size.height * 0.22),
                 width: MediaQuery.of(context).size.width,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -94,7 +100,10 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(right: 25, left: 25, top: 230),
+                margin: EdgeInsets.only(
+                    right: 25,
+                    left: 25,
+                    top: MediaQuery.of(context).size.height * 0.4),
                 height: 60,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
@@ -140,7 +149,8 @@ class FirstPage extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 300),
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * .5),
                 width: MediaQuery.of(context).size.width,
                 child: Column(
                   children: [
