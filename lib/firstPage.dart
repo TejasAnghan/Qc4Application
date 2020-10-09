@@ -194,7 +194,7 @@ class FirstPage extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(
                           right: 25, left: 25, top: 15, bottom: 20),
-                      height: 250,
+                      height: MediaQuery.of(context).size.height * 0.4,
                       width: MediaQuery.of(context).size.width,
                       padding: EdgeInsets.symmetric(horizontal: 20),
                       decoration: BoxDecoration(
@@ -205,7 +205,7 @@ class FirstPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           SizedBox(
-                            height: 250,
+                            height: MediaQuery.of(context).size.height * 0.4,
                             child: ListView.builder(
                               itemCount: 10,
                               // shrinkWrap: true,
